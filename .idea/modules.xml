@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/tendermint-nodes/tendermint-nodes.iml" filepath="$PROJECT_DIR$/tendermint-nodes/tendermint-nodes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tendermint-vote-abci.iml" filepath="$PROJECT_DIR$/.idea/modules/tendermint-vote-abci.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/469011273/tendermint-websocket.iml" filepath="$PROJECT_DIR$/.idea/modules/469011273/tendermint-websocket.iml" />
+    </modules>
+  </component>
+</project>

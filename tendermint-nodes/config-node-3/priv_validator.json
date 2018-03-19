@@ -1,0 +1,15 @@
+{
+    "address": "2A5E628713DD040A7429F132D90547C2808BCCE3",
+    "pub_key": {
+        "type": "ed25519",
+        "data": "B7CFAA10823901B3FDFCE93C10A31FF34A0032FBF2C94A7B41E04CB8A56ECB24"
+    },
+    "last_height": 0,
+    "last_round": 0,
+    "last_step": 0,
+    "last_signature": null,
+    "priv_key": {
+        "type": "ed25519",
+        "data": "9A76864DACC113CD8DFCD5C7EEC7F39299F65C0A2E2403A2EE3554BD2B651797B7CFAA10823901B3FDFCE93C10A31FF34A0032FBF2C94A7B41E04CB8A56ECB24"
+    }
+}

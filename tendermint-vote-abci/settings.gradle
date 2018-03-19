@@ -1,0 +1,3 @@
+rootProject.name = 'tendermint-vote-abci'
+includeBuild("../tendermint-websocket")
+

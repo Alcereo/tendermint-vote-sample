@@ -1,0 +1,57 @@
+version: '3.3'
+
+services: 
+
+  node-1:
+    image: "tenderrmint-manual:0.15"
+    build:
+      context: "./tendermint-dockerfile"
+    # image: tendermint/tendermint:0.15
+    command: 
+    - "bash"
+    - "-c"
+    - "tendermint init && tendermint node"
+    volumes: 
+    - ./work-tmp/config-node-1:/tendermint
+    networks: 
+      tendermint-test:
+        ipv4_address: 172.28.0.80
+
+  node-2:
+    image: "tenderrmint-manual:0.15"
+    build:
+      context: "./tendermint-dockerfile"
+    # image: tendermint/tendermint:0.15
+    command: 
+    - "bash"
+    - "-c" 
+    - "tendermint init && tendermint node"
+    volumes: 
+    - ./work-tmp/config-node-2:/tendermint
+    links: 
+    - node-1
+    networks: 
+      tendermint-test:
+        ipv4_address: 172.28.0.81
+
+  # node-3:
+  #   image: tendermint-self
+  #   # image: tendermint/tendermint:0.15
+  #   command: 
+  #   - "bash"
+  #   - "-c" 
+  #   - "tendermint init && tendermint node"
+  #   volumes: 
+  #   - ./work-tmp/config-node-3:/tendermint
+  #   links:
+  #   - node-1
+  #   networks: 
+  #     tendermint-test:
+  #       ipv4_address: 172.28.0.82
+
+networks:
+  tendermint-test:
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.28.0.0/16

@@ -1,0 +1,31 @@
+{
+    "genesis_time": "0001-01-01T00:00:00Z",
+    "chain_id": "test-chain-VU9nl9",
+    "validators": [
+        {
+            "pub_key": {
+                "type": "ed25519",
+                "data": "D07DD6871505DF4C138E0A36EA8AA09C4C7307516F47AB098F21A65C93B5EF35"
+            },
+            "power": 10,
+            "name": ""
+        },
+        {
+            "pub_key": {
+                "type": "ed25519",
+                "data": "151A69C8FAF3165177CDB7503E95933D604362E9DAA5D50EA28287739E6F262D"
+            },
+            "power": 10,
+            "name": ""
+        },
+        {
+            "pub_key": {
+                "type": "ed25519",
+                "data": "B7CFAA10823901B3FDFCE93C10A31FF34A0032FBF2C94A7B41E04CB8A56ECB24"
+            },
+            "power": 10,
+            "name": ""
+        }
+    ],
+    "app_hash": ""
+}
